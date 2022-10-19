@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777575"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-108dp">
+
+
+    <Button
+        android:id="@+id/readmeButton"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/gray"
+        android:text="Readme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/middle_middle"
+        app:layout_constraintTop_toBottomOf="@+id/top_right" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_left"
+        app:layout_constraintEnd_toStartOf="@+id/middle_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_left" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_middle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_middle"
+        app:layout_constraintEnd_toStartOf="@+id/middle_right"
+        app:layout_constraintStart_toEndOf="@+id/middle_left"
+        app:layout_constraintTop_toBottomOf="@+id/top_middle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray"
+
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_left" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="49dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bottom_middle"
+        app:layout_constraintTop_toBottomOf="@+id/middle_right" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_middle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray"
+
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_right"
+        app:layout_constraintStart_toEndOf="@+id/bottom_left"
+        app:layout_constraintTop_toBottomOf="@+id/middle_middle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/top_middle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_middle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_middle"
+        app:layout_constraintEnd_toStartOf="@+id/top_right"
+        app:layout_constraintStart_toEndOf="@+id/top_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/architects_daughter2"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_left"
+        app:layout_constraintEnd_toStartOf="@+id/top_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="541dp"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="234dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:lines="2"
+        android:text="Tic-Tac-Toe"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/gray"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

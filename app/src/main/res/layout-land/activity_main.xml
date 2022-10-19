@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777575"
+    android:scrollbarSize="20dp"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-108dp">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_right"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@color/gray"
+        android:textSize="30sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_right"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/top_middle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_left"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        android:textSize="30sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_left"
+        app:layout_constraintEnd_toStartOf="@+id/top_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_left"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_left"
+        app:layout_constraintEnd_toStartOf="@+id/middle_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_left"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_right"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="100dp"
+
+        android:background="@color/gray"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_right"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/middle_middle"
+        app:layout_constraintTop_toBottomOf="@+id/top_right"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_middle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/gray"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_right"
+        app:layout_constraintStart_toEndOf="@+id/bottom_left"
+        app:layout_constraintTop_toBottomOf="@+id/middle_middle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_right"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/gray"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/bottom_middle"
+        app:layout_constraintTop_toBottomOf="@+id/middle_right"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_left"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/gray"
+        android:textSize="30sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_middle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_left"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/middle_middle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray"
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_middle"
+        app:layout_constraintEnd_toStartOf="@+id/middle_right"
+        app:layout_constraintStart_toEndOf="@+id/middle_left"
+        app:layout_constraintTop_toBottomOf="@+id/top_middle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/top_middle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+
+        android:textSize="30dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_middle"
+        app:layout_constraintEnd_toStartOf="@+id/top_right"
+        app:layout_constraintStart_toEndOf="@+id/top_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="234dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:lines="2"
+        android:text="Tic-Tac-Toe"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="448dp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/gray"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
